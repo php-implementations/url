@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f7b86157628e9ccbceed3214959723f",
+    "content-hash": "9767cc2f0bb9bf3cb6a2cd2232d9bb9e",
     "packages": [
         {
             "name": "amphp/amp",
@@ -520,6 +520,163 @@
             "time": "2016-04-04T20:24:59+00:00"
         },
         {
+            "name": "madkom/collection",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/madkom/collection.git",
+                "reference": "c53d9c55ec7c7a333d5bd6fea2cc9fd7e241a256"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/madkom/collection/zipball/c53d9c55ec7c7a333d5bd6fea2cc9fd7e241a256",
+                "reference": "c53d9c55ec7c7a333d5bd6fea2cc9fd7e241a256",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7"
+            },
+            "require-dev": {
+                "clover/dump": "dev-master",
+                "henrikbjorn/phpspec-code-coverage": "@dev",
+                "instaclick/object-calisthenics-sniffs": "@dev",
+                "jakub-onderka/php-console-highlighter": "0.*",
+                "jakub-onderka/php-parallel-lint": "0.*",
+                "mdarse/phpunit-notifier": "@dev",
+                "phpspec/phpspec": "@dev",
+                "phpspec/prophecy": "dev-master",
+                "phpunit/phpcov": "*",
+                "phpunit/phpunit": "5.*",
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "^2.3",
+                "symfony/var-dumper": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Madkom\\Collection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michał Brzuchalski",
+                    "email": "m.brzuchalski@madkom.pl"
+                }
+            ],
+            "description": "Entity collection library with strict element typing",
+            "time": "2016-10-06T09:53:14+00:00"
+        },
+        {
+            "name": "madkom/regex",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/madkom/regex.git",
+                "reference": "dc8d44a24723f0954518f7b984a315c6a3d0451a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/madkom/regex/zipball/dc8d44a24723f0954518f7b984a315c6a3d0451a",
+                "reference": "dc8d44a24723f0954518f7b984a315c6a3d0451a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7"
+            },
+            "require-dev": {
+                "clover/dump": "dev-master",
+                "henrikbjorn/phpspec-code-coverage": "@dev",
+                "instaclick/object-calisthenics-sniffs": "@dev",
+                "jakub-onderka/php-console-highlighter": "0.*",
+                "jakub-onderka/php-parallel-lint": "0.*",
+                "mdarse/phpunit-notifier": "@dev",
+                "phpspec/phpspec": "@dev",
+                "phpspec/prophecy": "dev-master",
+                "phpunit/phpcov": "*",
+                "phpunit/phpunit": "5.*",
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "^2.3",
+                "symfony/var-dumper": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Madkom\\RegEx\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michał Brzuchalski",
+                    "email": "m.brzuchalski@madkom.pl"
+                }
+            ],
+            "description": "PCRE RegEx wrapper around PHP regular expression functions",
+            "time": "2016-03-04T18:37:54+00:00"
+        },
+        {
+            "name": "madkom/uri",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/madkom/uri.git",
+                "reference": "d31389e0e2eac3828678dbd716b756f7acb65845"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/madkom/uri/zipball/d31389e0e2eac3828678dbd716b756f7acb65845",
+                "reference": "d31389e0e2eac3828678dbd716b756f7acb65845",
+                "shasum": ""
+            },
+            "require": {
+                "madkom/collection": "1.*",
+                "madkom/regex": "1.*",
+                "php": "~7",
+                "rize/uri-template": "^0.3.0",
+                "true/punycode": "^2.0"
+            },
+            "require-dev": {
+                "clover/dump": "dev-master",
+                "henrikbjorn/phpspec-code-coverage": "@dev",
+                "instaclick/object-calisthenics-sniffs": "@dev",
+                "jakub-onderka/php-console-highlighter": "0.*",
+                "jakub-onderka/php-parallel-lint": "0.*",
+                "mdarse/phpunit-notifier": "@dev",
+                "phpspec/phpspec": "@dev",
+                "phpspec/prophecy": "dev-master",
+                "phpunit/phpcov": "*",
+                "phpunit/phpunit": "5.*",
+                "satooshi/php-coveralls": "1.0.*@dev",
+                "squizlabs/php_codesniffer": "^2.3",
+                "symfony/var-dumper": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Madkom\\Uri\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michał Brzuchalski",
+                    "email": "m.brzuchalski@madkom.pl"
+                }
+            ],
+            "description": "Uniform Resource Identifier (URI) and Uniform Resource Locator (URL)",
+            "time": "2016-10-07T09:33:53+00:00"
+        },
+        {
             "name": "rdlowrey/auryn",
             "version": "v1.4.2",
             "source": {
@@ -581,6 +738,50 @@
             "time": "2017-05-15T06:26:46+00:00"
         },
         {
+            "name": "rize/uri-template",
+            "version": "0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rize/UriTemplate.git",
+                "reference": "9e5fdd5c47147aa5adf7f760002ee591ed37b9ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rize/UriTemplate/zipball/9e5fdd5c47147aa5adf7f760002ee591ed37b9ca",
+                "reference": "9e5fdd5c47147aa5adf7f760002ee591ed37b9ca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Rize\\UriTemplate": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marut K",
+                    "homepage": "http://twitter.com/rezigned"
+                }
+            ],
+            "description": "PHP URI Template (RFC 6570) supports both expansion & extraction",
+            "keywords": [
+                "RFC 6570",
+                "template",
+                "uri"
+            ],
+            "time": "2017-06-14T03:57:53+00:00"
+        },
+        {
             "name": "seld/cli-prompt",
             "version": "1.0.3",
             "source": {
@@ -627,6 +828,111 @@
                 "prompt"
             ],
             "time": "2017-03-18T11:32:45+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "f29dca382a6485c3cbe6379f0c61230167681937"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f29dca382a6485c3cbe6379f0c61230167681937",
+                "reference": "f29dca382a6485c3cbe6379f0c61230167681937",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2017-06-09T14:24:12+00:00"
+        },
+        {
+            "name": "true/punycode",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/true/php-punycode.git",
+                "reference": "a4d0c11a36dd7f4e7cd7096076cab6d3378a071e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/true/php-punycode/zipball/a4d0c11a36dd7f4e7cd7096076cab6d3378a071e",
+                "reference": "a4d0c11a36dd7f4e7cd7096076cab6d3378a071e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/polyfill-mbstring": "^1.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.7",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TrueBV\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Renan Gonçalves",
+                    "email": "renan.saddam@gmail.com"
+                }
+            ],
+            "description": "A Bootstring encoding of Unicode for Internationalized Domain Names in Applications (IDNA)",
+            "homepage": "https://github.com/true/php-punycode",
+            "keywords": [
+                "idna",
+                "punycode"
+            ],
+            "time": "2016-11-16T10:37:54+00:00"
         }
     ],
     "packages-dev": [

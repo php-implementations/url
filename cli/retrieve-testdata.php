@@ -37,6 +37,6 @@ foreach ($dataSources as $key => $dataSource) {
 
     file_put_contents(
         __DIR__ . '/../data/input/' . $key . '.php',
-        '<?php $matches = ' . var_export($parser->parse($sourceData), true) . ';'
+        '<?php return ' . var_export($parser->parse($sourceData), true) . ';'
     );
 }
