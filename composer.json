@@ -1,0 +1,42 @@
+{
+    "name": "php-implementations/url",
+    "homepage": "https://github.com/php-implementations/url",
+    "description": "Testing PHP URL implementations",
+    "keywords": [
+        "testing",
+        "implementations",
+        "url",
+        "benchmark"
+    ],
+    "version": "0.1.0",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pieter Hordijk",
+            "email": "info@pieterhordijk.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7",
+        "rdlowrey/auryn": "^1",
+        "amphp/artax": "^2",
+        "league/climate": "^3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpImplementations\\Url\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpImplementations\\UrlTest\\": "tests/"
+        }
+    }
+}
