@@ -5,6 +5,7 @@ namespace PhpImplementations\Cli;
 use Auryn\Injector;
 use League\CLImate\CLImate;
 use PhpImplementations\Url\Implementation\Madkom;
+use PhpImplementations\Url\Implementation\Sabre;
 use PhpImplementations\Url\Output\Writer;
 use PhpImplementations\Url\Test;
 use PhpImplementations\Url\Test\Validity;
@@ -13,6 +14,7 @@ require_once __DIR__ . '/../bootstrap.php';
 
 $implementations = [
     Madkom::class,
+    Sabre::class,
 ];
 
 $tests = [
